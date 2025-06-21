@@ -1,0 +1,537 @@
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "Electronics",
+            "slug": "electronics",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "Books",
+            "slug": "books",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "Clothing",
+            "slug": "clothing",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "Home & Kitchen",
+            "slug": "home-kitchen",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "name": "Sports & Outdoors",
+            "slug": "sports-outdoors",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Bestseller",
+            "slug": "bestseller",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 2,
+        "fields": {
+            "name": "New Arrival",
+            "slug": "new-arrival",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 3,
+        "fields": {
+            "name": "Discount",
+            "slug": "discount",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 4,
+        "fields": {
+            "name": "Popular",
+            "slug": "popular",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 5,
+        "fields": {
+            "name": "Limited Edition",
+            "slug": "limited-edition",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 6,
+        "fields": {
+            "name": "Eco-Friendly",
+            "slug": "eco-friendly",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 7,
+        "fields": {
+            "name": "Durable",
+            "slug": "durable",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 8,
+        "fields": {
+            "name": "Lightweight",
+            "slug": "lightweight",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 9,
+        "fields": {
+            "name": "Handmade",
+            "slug": "handmade",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 10,
+        "fields": {
+            "name": "Trending",
+            "slug": "trending",
+            "created_at": "2025-06-21T01:00:50.819826+00:00",
+            "updated_at": "2025-06-21T01:00:50.819826+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "name": "Wireless Earbuds",
+            "slug": "wireless-earbuds",
+            "description": "High-quality noise-canceling wireless earbuds with long battery life.",
+            "image": "products/wireless-earbuds.jpg",
+            "category": 1,
+            "tags": [
+                1,
+                8,
+                7
+            ],
+            "price": "79.99",
+            "stock": 25,
+            "created_at": "2025-06-20T23:11:50+00:00",
+            "updated_at": "2025-06-20T23:28:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "name": "Stainless Steel Water Bottle",
+            "slug": "stainless-steel-water-bottle",
+            "description": "Eco-friendly water bottle that keeps drinks cold for 24 hours.",
+            "image": "products/stainless-steel-water-bottle.jpg",
+            "category": 5,
+            "tags": [
+                6,
+                7,
+                1
+            ],
+            "price": "29.95",
+            "stock": 60,
+            "created_at": "2025-06-20T23:34:50+00:00",
+            "updated_at": "2025-06-20T23:54:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "name": "The Art of Python",
+            "slug": "the-art-of-python",
+            "description": "A beautifully designed book for mastering Python programming.",
+            "image": "products/the-art-of-python.jpg",
+            "category": 2,
+            "tags": [
+                4,
+                10
+            ],
+            "price": "39.00",
+            "stock": 40,
+            "created_at": "2025-06-20T23:17:50+00:00",
+            "updated_at": "2025-06-20T23:30:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "name": "Handmade Ceramic Mug",
+            "slug": "handmade-ceramic-mug",
+            "description": "A rustic-style handmade coffee mug perfect for home or office.",
+            "image": "products/handmade-ceramic-mug.jpg",
+            "category": 4,
+            "tags": [
+                9,
+                5
+            ],
+            "price": "19.99",
+            "stock": 100,
+            "created_at": "2025-06-20T23:34:50+00:00",
+            "updated_at": "2025-06-20T23:52:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "name": "Soft Cotton Hoodie",
+            "slug": "soft-cotton-hoodie",
+            "description": "Comfortable cotton hoodie available in multiple colors.",
+            "image": "products/soft-cotton-hoodie.jpg",
+            "category": 3,
+            "tags": [
+                2,
+                4,
+                7
+            ],
+            "price": "49.99",
+            "stock": 30,
+            "created_at": "2025-06-20T23:00:50+00:00",
+            "updated_at": "2025-06-20T23:08:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 6,
+        "fields": {
+            "name": "Bluetooth Speaker",
+            "slug": "bluetooth-speaker",
+            "description": "Portable speaker with deep bass and waterproof design.",
+            "image": "products/bluetooth-speaker.jpg",
+            "category": 1,
+            "tags": [
+                1,
+                7
+            ],
+            "price": "59.99",
+            "stock": 50,
+            "created_at": "2025-06-20T23:16:50+00:00",
+            "updated_at": "2025-06-20T23:44:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,
+        "fields": {
+            "name": "Yoga Mat",
+            "slug": "yoga-mat",
+            "description": "Non-slip yoga mat with extra cushioning.",
+            "image": "products/yoga-mat.jpg",
+            "category": 5,
+            "tags": [
+                6,
+                7,
+                4
+            ],
+            "price": "24.99",
+            "stock": 80,
+            "created_at": "2025-06-20T23:13:50+00:00",
+            "updated_at": "2025-06-20T23:43:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,
+        "fields": {
+            "name": "Noise Cancelling Headphones",
+            "slug": "noise-cancelling-headphones",
+            "description": "Over-ear headphones with active noise cancellation.",
+            "image": "products/noise-cancelling-headphones.jpg",
+            "category": 1,
+            "tags": [
+                10,
+                4,
+                2
+            ],
+            "price": "129.99",
+            "stock": 20,
+            "created_at": "2025-06-21T00:42:50+00:00",
+            "updated_at": "2025-06-21T00:43:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,
+        "fields": {
+            "name": "LED Desk Lamp",
+            "slug": "led-desk-lamp",
+            "description": "Adjustable LED desk lamp with USB charging port.",
+            "image": "products/led-desk-lamp.jpg",
+            "category": 4,
+            "tags": [
+                8,
+                6
+            ],
+            "price": "34.50",
+            "stock": 70,
+            "created_at": "2025-06-21T01:00:50+00:00",
+            "updated_at": "2025-06-21T01:09:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,
+        "fields": {
+            "name": "Classic Denim Jacket",
+            "slug": "classic-denim-jacket",
+            "description": "Stylish denim jacket with a comfortable fit.",
+            "image": "products/classic-denim-jacket.jpg",
+            "category": 3,
+            "tags": [
+                4,
+                7
+            ],
+            "price": "69.00",
+            "stock": 45,
+            "created_at": "2025-06-21T00:54:50+00:00",
+            "updated_at": "2025-06-21T00:56:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 11,
+        "fields": {
+            "name": "Organic Cotton T-Shirt",
+            "slug": "organic-cotton-t-shirt",
+            "description": "Soft and breathable organic cotton t-shirt.",
+            "image": "products/organic-cotton-t-shirt.jpg",
+            "category": 3,
+            "tags": [
+                6,
+                8
+            ],
+            "price": "22.00",
+            "stock": 100,
+            "created_at": "2025-06-20T23:58:50+00:00",
+            "updated_at": "2025-06-21T00:19:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 12,
+        "fields": {
+            "name": "Stainless Steel Knife Set",
+            "slug": "stainless-steel-knife-set",
+            "description": "Professional knife set with ergonomic handles.",
+            "image": "products/stainless-steel-knife-set.jpg",
+            "category": 4,
+            "tags": [
+                7,
+                1
+            ],
+            "price": "89.99",
+            "stock": 25,
+            "created_at": "2025-06-20T23:01:50+00:00",
+            "updated_at": "2025-06-20T23:21:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 13,
+        "fields": {
+            "name": "Wireless Charger Pad",
+            "slug": "wireless-charger-pad",
+            "description": "Fast-charging pad compatible with all Qi devices.",
+            "image": "products/wireless-charger-pad.jpg",
+            "category": 1,
+            "tags": [
+                2,
+                10
+            ],
+            "price": "18.75",
+            "stock": 65,
+            "created_at": "2025-06-21T00:29:50+00:00",
+            "updated_at": "2025-06-21T00:43:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 14,
+        "fields": {
+            "name": "Running Shoes",
+            "slug": "running-shoes",
+            "description": "Lightweight and breathable running shoes for daily use.",
+            "image": "products/running-shoes.jpg",
+            "category": 5,
+            "tags": [
+                8,
+                4
+            ],
+            "price": "79.99",
+            "stock": 55,
+            "created_at": "2025-06-20T23:18:50+00:00",
+            "updated_at": "2025-06-20T23:28:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 15,
+        "fields": {
+            "name": "Wooden Bookshelf",
+            "slug": "wooden-bookshelf",
+            "description": "Modern design wooden bookshelf for home and office.",
+            "image": "products/wooden-bookshelf.jpg",
+            "category": 4,
+            "tags": [
+                7,
+                9
+            ],
+            "price": "149.99",
+            "stock": 15,
+            "created_at": "2025-06-21T00:53:50+00:00",
+            "updated_at": "2025-06-21T01:07:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 16,
+        "fields": {
+            "name": "Minimalist Wrist Watch",
+            "slug": "minimalist-wrist-watch",
+            "description": "Elegant wristwatch with leather strap.",
+            "image": "products/minimalist-wrist-watch.jpg",
+            "category": 3,
+            "tags": [
+                10,
+                5
+            ],
+            "price": "99.00",
+            "stock": 35,
+            "created_at": "2025-06-21T00:11:50+00:00",
+            "updated_at": "2025-06-21T00:23:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 17,
+        "fields": {
+            "name": "Stainless Steel Thermos",
+            "slug": "stainless-steel-thermos",
+            "description": "Keeps beverages hot or cold for hours.",
+            "image": "products/stainless-steel-thermos.jpg",
+            "category": 5,
+            "tags": [
+                1,
+                6
+            ],
+            "price": "27.99",
+            "stock": 60,
+            "created_at": "2025-06-21T00:09:50+00:00",
+            "updated_at": "2025-06-21T00:13:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "name": "Smartphone Tripod",
+            "slug": "smartphone-tripod",
+            "description": "Flexible tripod stand with Bluetooth remote.",
+            "image": "products/smartphone-tripod.jpg",
+            "category": 1,
+            "tags": [
+                2,
+                7
+            ],
+            "price": "21.50",
+            "stock": 40,
+            "created_at": "2025-06-21T00:47:50+00:00",
+            "updated_at": "2025-06-21T01:01:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "name": "Fiction Novel - 'Echoes of Time'",
+            "slug": "fiction-novel-echoes-of-time",
+            "description": "Gripping science fiction novel with rich characters.",
+            "image": "products/fiction-novel-echoes-of-time.jpg",
+            "category": 2,
+            "tags": [
+                4,
+                1
+            ],
+            "price": "18.99",
+            "stock": 85,
+            "created_at": "2025-06-21T00:59:50+00:00",
+            "updated_at": "2025-06-21T01:13:50+00:00"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "name": "Cooking Utensil Set",
+            "slug": "cooking-utensil-set",
+            "description": "Heat-resistant silicone utensils in multiple colors.",
+            "image": "products/cooking-utensil-set.jpg",
+            "category": 4,
+            "tags": [
+                8,
+                6
+            ],
+            "price": "32.95",
+            "stock": 75,
+            "created_at": "2025-06-21T00:35:50+00:00",
+            "updated_at": "2025-06-21T00:35:50+00:00"
+        }
+    }
+]
