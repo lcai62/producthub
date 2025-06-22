@@ -6,13 +6,13 @@ from products.models import Tag, Category, Product
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
-        fields = ['name', 'slug']
+        fields = ['name']
 
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['name', 'slug']
+        fields = ['name']
 
 
 class ProductSerializer(serializers.ModelSerializer):

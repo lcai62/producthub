@@ -3,7 +3,6 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -17,7 +16,6 @@ class Category(models.Model):
 
 class Tag(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -31,7 +29,6 @@ class Tag(models.Model):
 
 class Product(models.Model):
     name = models.TextField()
-    slug = models.SlugField(max_length=100, unique=True)
 
     description = models.TextField()
     image = models.ImageField(upload_to='products/', blank=True, null=True)

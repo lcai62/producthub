@@ -5,15 +5,14 @@ from products.models import Category, Tag, Product
 
 class ProductAPITestCase(APITestCase):
     def setUp(self):
-        self.books = Category.objects.create(name="Books", slug="books")
-        self.electronics = Category.objects.create(name="Electronics", slug="electronics")
+        self.books = Category.objects.create(name="Books")
+        self.electronics = Category.objects.create(name="Electronics")
 
-        self.tag_popular = Tag.objects.create(name="Popular", slug="popular")
-        self.tag_discount = Tag.objects.create(name="Discount", slug="discount")
+        self.tag_popular = Tag.objects.create(name="Popular")
+        self.tag_discount = Tag.objects.create(name="Discount")
 
         self.product1 = Product.objects.create(
             name="Science Book",
-            slug="science-book",
             description="a grade 10 science book.",
             category=self.books,
             price="10.00",
@@ -23,7 +22,6 @@ class ProductAPITestCase(APITestCase):
 
         self.product2 = Product.objects.create(
             name="Physics Book",
-            slug="physics-book",
             description="a physics book for smart kids",
             category=self.books,
             price="12.00",
@@ -33,7 +31,6 @@ class ProductAPITestCase(APITestCase):
 
         self.product3 = Product.objects.create(
             name="Smartphone",
-            slug="smartphone",
             description="with new ai assistant",
             category=self.electronics,
             price="500.00",
@@ -46,12 +43,12 @@ class ProductAPITestCase(APITestCase):
         self.assertEqual(len(response.data["results"]), 3)
 
     def test_filter_by_category(self):
-        response = self.client.get("/api/products/?category__slug=books")
+        response = self.client.get("/api/products/?category=books")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data["results"]), 2)
 
     def test_filter_by_tags(self):
-        response = self.client.get("/api/products/?tags__slug=popular,discount")
+        response = self.client.get("/api/products/?tags=popular,discount")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         product_names = [p["name"] for p in response.data["results"]]
         self.assertIn("Physics Book", product_names)
@@ -64,7 +61,7 @@ class ProductAPITestCase(APITestCase):
         self.assertEqual(response.data["results"][0]["name"], "Physics Book")
 
     def test_filter_and_search_combined(self):
-        response = self.client.get("/api/products/?category__slug=books&description=smart")
+        response = self.client.get("/api/products/?category=books&description=smart")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         results = response.data["results"]
         self.assertEqual(len(results), 1)
@@ -74,7 +71,6 @@ class ProductAPITestCase(APITestCase):
         for i in range(15):
             p = Product.objects.create(
                 name=f"Product {i}",
-                slug=f"product-{i}",
                 description="description dummy",
                 category=self.books,
                 price="5.00",
@@ -84,8 +80,8 @@ class ProductAPITestCase(APITestCase):
 
         response = self.client.get("/api/products/")
 
-        # 18 total, page count 10
+        # 18 total, page count 12
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["count"], 18)
-        self.assertEqual(len(response.data["results"]), 10)
+        self.assertEqual(len(response.data["results"]), 12)
         self.assertIsNotNone(response.data["next"])
