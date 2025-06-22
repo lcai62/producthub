@@ -67,6 +67,13 @@ class ProductAPITestCase(APITestCase):
         self.assertEqual(len(results), 1)
         self.assertEqual(results[0]["name"], "Physics Book")
 
+    def test_filter_by_category_and_tags(self):
+        response = self.client.get("/api/products/?tags=popular,discount")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        results = response.data["results"]
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["name"], "Physics Book")
+
     def test_pagination(self):
         for i in range(15):
             p = Product.objects.create(
