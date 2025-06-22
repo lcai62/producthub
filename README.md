@@ -1,3 +1,12 @@
+## Prerequisites
+Make sure you have the following installed
+- Python 3.10+
+- Nodejs + npm
+- Git
+> React app runs on http://localhost:3000  
+> Django runs on http://localhost:8000  
+> Verify nothing else is using these ports before running
+
 ## Django Setup Instructions
 
 1. Clone the Repository
@@ -45,7 +54,6 @@ cd frontend
 npm install
 npm start
 ```
-
 
 ## AI disclosure
 ChatGPT was used to generate the tag names, category names, and product names, descriptions, prices, stock, along with associated tags and categories
